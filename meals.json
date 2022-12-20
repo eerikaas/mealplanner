@@ -1,0 +1,300 @@
+{
+"meals": [
+{
+    "name": "Kanakastike",
+    "ingredients": ["kanan fileesuikale", "ruokakerma", "ranskalaiset"],
+    "type": ["meat"]
+},
+{
+    "name": "Kanankoivet",
+    "ingredients": ["kanankoivet", "riisi"],
+    "type": ["meat"]
+},
+{
+    "name": "Butter chicken",
+    "ingredients": ["paseerattu tomaatti", "kanan fileesuikale", "turkkilainen jugurtti", "tomaattipyre", "butter chicken kastike"],
+    "type": ["meat"]
+},
+{
+    "name": "Kana & parsakaali",
+    "ingredients": ["kanan fileesuikale", "parsakaali", "ruokakerma"],
+    "type": ["meat"]
+},
+{
+    "name": "Kanapihvit",
+    "ingredients": ["kanan pihvit", "ruokakerma"],
+    "type": ["meat"]
+},
+{
+    "name": "Kanasalaatti",
+    "ingredients": ["kanasuikaleet", "tomaatti", "kurkku", "paprika", "maissi", "salaatti", "paahtoleipä"],
+    "type": ["meat", "veggie", "quick"]
+},
+{
+    "name": "Kalapuikot",
+    "ingredients": ["kalapuikot", "ranskalaiset"],
+    "type": ["fish", "quick"]
+},
+{
+    "name": "Kalapalat",
+    "ingredients": ["kalapalat", "peruna", "herne", "creme fraise"],
+    "type": ["fish", "quick"]
+},
+{
+    "name": "Lohisuikaleet",
+    "ingredients": ["lohisuikaleet", "ruokakerma"],
+    "type": ["fish"]
+},
+{
+    "name": "Lohifile",
+    "ingredients": ["lohi", "creme fraise", "peruna"],
+    "type": ["fish"]
+},
+{
+    "name": "Kalakeitto",
+    "ingredients": ["pakastekala", "peruna", "porkkana", "tilli", "maito", "ruokakerma"],
+    "type": ["fish"]
+},
+{
+    "name": "Tonnikalavuoka",
+    "ingredients": ["tonnikala", "ruokakerma", "paseerattu tomaatti", "mozzarella"],
+    "type": ["fish"]
+},
+{
+    "name": "Täytetyt paprikat",
+    "ingredients": ["suippopaprika", "tuorejuusto", "juustoraaste", "tonnikala", "tomaattipyre"],
+    "type": ["fish", "veggie"]
+},
+{
+    "name": "Tonnikalakastike",
+    "ingredients": ["tonnikala", "ruokakerma", "tomaattipyre"],
+    "type": ["fish"]
+},
+{
+    "name": "Halloumikatkarapuwokki",
+    "ingredients": ["halloumi", "katkarapu", "kaali", "nuudeli", "sweet chili kastike"],
+    "type": ["fish"]
+},
+{
+    "name": "Pizza",
+    "ingredients": ["00-jauho", "kuivahiiva", "pizzakastike", "juustoraaste", "mozzarella", "prosciutto", "kirsikkatomaatti", "rucola"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Hampurilaiset",
+    "ingredients": ["hampurilaisjauheliha", "hampurilaissämpylät", "ananasrenkaat", "majoneesi", "cheddarjuusto", "salaatti", "tomaatti"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Naughty-hampurilaiset",
+    "ingredients": ["hampurilaisjauheliha", "viikunahillo", "cheddarjuusto", "sinihomejuusto", "rucola", "valkosipulimajoneesi", "hampurilaissämpylät"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Hotdog",
+    "ingredients": ["hotdog sämpylät", "hotdog nakit", "coleslaw", "majoneesi", "juustoraaste"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Wings",
+    "ingredients": ["wings", "ranskalaiset", "creme fraise", "auramuru", "porkkana"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Tortillat",
+    "ingredients": ["tortillat", "jauheliha", "tomaattipyre", "kurkku", "tomaatti", "maissi", "dippi", "juustoraaste"],
+    "type": ["weekend" , "meat", "quick"]
+},
+{
+    "name": "Pihvi",
+    "ingredients": ["vapaavalintainen pihvi", "parsa", "kermaperunat"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Nachopelti",
+    "ingredients": ["nachot", "jauheliha", "juustoraaste", "creme fraise", "salsa", "kurkku", "tomaatti"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Kinkkuhyrrät",
+    "ingredients": ["lehtitaikina", "kinkkusuikale", "paprika", "juustoraaste"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Sushi",
+    "ingredients": ["sushiriisi", "nori", "kurkku", "porkkana", "tuorejuusto", "sushilohi", "sushietikka", "tonnikala", "majoneesi", "avokado"],
+    "type": ["weekend"]
+},
+{
+    "name": "Täytetyt patongit",
+    "ingredients": ["patongit", "salami", "kinkku", "meetwursti", "tomaatti", "paprika", "maissi", "kurkku", "salaatti", "majoneesi", "juustoviipale"],
+    "type": ["weekend" , "meat"]
+},
+{
+    "name": "Gnocchivuoka",
+    "ingredients": ["gnocchi", "paseerattu tomaatti", "tomaattipyre", "mozzarella"],
+    "type": ["veggie", "pasta"]
+},
+{
+    "name": "Vodkapasta",
+    "ingredients": ["sipuli", "valkosipuli", "pasta", "tomaattipyre", "ruokakerma", "parmesaanijuusto"],
+    "type": ["veggie", "pasta", "quick"]
+},
+{
+    "name": "Avokadopasta",
+    "ingredients": ["avokado", "parmesaanijuusto", "pasta"],
+    "type": ["veggie", "pasta", "quick"]
+},
+{
+    "name": "Pestopasta",
+    "ingredients": ["kanasuikaleet", "pesto", "kirsikkatomaatti", "tuorepasta", "parmesaanijuusto"],
+    "type": ["meat", "pasta", "veggie"]
+},
+{
+    "name": "Vuohenjuustopasta",
+    "ingredients": ["vuohenjuusto", "kirsikkatomaatti", "tuorejuusto", "pasta"],
+    "type": ["veggie", "pasta"]
+
+},
+{
+    "name": "Uunifetapasta",
+    "ingredients": ["pasta", "feta", "kirsikkatomaatti", "valkosipuli"],
+    "type": ["veggie", "pasta", "quick"]
+},
+{
+    "name": "Tortellini",
+    "ingredients": ["tortellini", "ruokakerma", "pinaatti"],
+    "type": ["veggie", "pasta", "quick"]
+},
+{
+    "name": "Sienipasta",
+    "ingredients": ["sienet", "kantarellikastike", "parmesaanijuusto", "pasta"],
+    "type": ["veggie", "pasta"]
+},
+{
+    "name": "Kantarellirisotto",
+    "ingredients": ["sienet", "kantarellikastike", "salottisipuli", "valkosipuli", "risottoriisi", "valkoviini", "kanaliemi", "auramuru"],
+    "type": ["veggie", "weekend"]
+},
+{
+    "name": "Paistettu riisi",
+    "ingredients": ["riisi", "kananmunat", "hernemaissipaprika"],
+    "type": ["veggie"]
+},
+{
+    "name": "Paistettu kaali",
+    "ingredients": ["kaali", "nuudeli"],
+    "type": ["veggie", "quick"]
+},
+{
+    "name": "Pinaattiletut",
+    "ingredients": ["maito", "kananmunat", "pinaatti", "kermaperunat", "kermakastike", "herne"],
+    "type": ["veggie"]
+},
+{
+    "name": "Texmex salaatti",
+    "ingredients": ["salaatti", "tomaatti", "kurkku", "paprika", "maissi", "dippi", "nachot", "juustoraaste", "jauheliha"],
+    "type": ["veggie", "meat", "quick"]
+},
+{
+    "name": "Papukastike",
+    "ingredients": ["vapaavalintaiset pavut", "ruokakerma"],
+    "type": ["veggie", "pasta", "quick"]
+},
+{
+    "name": "Lämärit",
+    "ingredients": ["leipä", "majoneesi", "tomaattipyre", "ananas", "kinkku", "paprika", "tonnikala", "juustoraaste"],
+    "type": ["meat", "quick"]
+},
+{
+    "name": "Tortillapizzat",
+    "ingredients": ["tortillat", "juustoraaste", "tomaattipyre", "kinkkusuikale", "ananas", "auramuru"],
+    "type": ["meat", "quick"]
+},
+{
+    "name": "Ramen",
+    "ingredients": ["vapaavalintainen liha", "ramen", "sokeriherneet", "kananmunat"],
+    "type": ["meat", "weekend"]
+},
+{
+    "name": "Lihapullat",
+    "ingredients": ["jauheliha", "perunat", "ruokakerma", "sipuli"],
+    "type": ["meat"]
+},
+{
+    "name": "Makaronilaatikko",
+    "ingredients": ["jauheliha", "maito", "ruokakerma", "kananmunat", "makaroni"],
+    "type": ["meat"]
+},
+{
+    "name": "Kaalikeitto",
+    "ingredients": ["kaali", "jauheliha", "porkkana", "peruna"],
+    "type": ["meat"]
+},
+{
+    "name": "Nakkikeitto",
+    "ingredients": ["nakki", "peruna", "porkkana"],
+    "type": ["meat"]
+},
+{
+    "name": "Risotto",
+    "ingredients": ["jauheliha", "risottoriisi", "hernemaissipaprika"],
+    "type": ["meat"]
+},
+{
+    "name": "Juvetsi",
+    "ingredients": ["porsaanliha", "orzo", "mozzarella", "tomaattipyre", "paseerattu tomaatti"],
+    "type": ["meat"]
+},
+{
+    "name": "Chili con carne",
+    "ingredients": ["jauheliha", "vapaavalintaiset pavut", "tomaattipyre", "paseerattu tomaatti"],
+    "type": ["meat"]
+},
+{
+    "name": "Kinkkukiusaus",
+    "ingredients": ["perunasuikaleet", "kinkkusuikaleet", "ruokakerma", "auramuru"],
+    "type": ["meat"]
+},
+{
+    "name": "Nistipata",
+    "ingredients": ["makaroni", "sipuli", "jauheliha"],
+    "type": ["meat", "quick"]
+},
+{
+    "name": "Juustoinen jauhelihakastike",
+    "ingredients": ["jauheliha", "juustoruokakerma", "makaroni"],
+    "type": ["meat"]
+},
+{
+    "name": "Uunimakkara",
+    "ingredients": ["hk sininen", "sipuli", "porkkana", "ruokakerma", "paseerattu tomaatti", "tomaattipyre", "peruna"],
+    "type": ["meat"]
+},
+{
+    "name": "Hoisinwokki",
+    "ingredients": ["nuudeli", "porsaanliha", "wokkivihannekset", "hoisin"],
+    "type": ["meat"]
+},
+{
+    "name": "Pasta carbonara",
+    "ingredients": ["pekoni", "spagetti", "parmesaanijuusto", "ruokakerma"],
+    "type": ["meat", "pasta"]
+},
+{
+    "name": "Lasagne",
+    "ingredients": ["lasagnelevyt", "jauheliha", "juustokastike", "juustoraaste", "tomaattikastike"],
+    "type": ["meat", "pasta"]
+},
+{
+    "name": "Uuniperunat",
+    "ingredients": ["uuniperunat", "kinkkusuikale", "paprika", "creme fraise", "tuorejuusto"],
+    "type": ["meat"]
+},
+{
+    "name": "Pasta bolognese",
+    "ingredients": ["jauheliha", "paseerattu tomaatti", "tomaattipyre", "spagetti"],
+    "type": ["meat", "pasta"]
+}
+]
+}

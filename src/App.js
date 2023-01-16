@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Meals from './components/Meals';
 import Ingredients from './components/Ingredients';
-import { db } from './utils/firebase';
-import { ref, onValue } from 'firebase/database'
+import ShoppingList from './components/ShoppingList';
+import './App.css'
 
 function App() {
   const [meals, setMeals] = useState([])
   const [selectedMeals, setSelectedMeals] = useState([])
   const [shoppingList, setShoppingList] = useState([])
+  const [newName, setNewName] = useState([])
+  const [newIngredients, setNewIngredients] = useState([])
 
   const getMealData = () => {
     fetch('https://mealplanner-e0f27-default-rtdb.europe-west1.firebasedatabase.app/.json')
@@ -18,6 +20,15 @@ function App() {
     .catch(() => {
       console.log('error')
     })
+  }
+
+  const writeMealData = (mealName, ingredients) => {
+    fetch('https://mealplanner-e0f27-default-rtdb.europe-west1.firebasedatabase.app/.json',
+    {
+      method: 'POST',
+      body: JSON.stringify()
+    })
+    
   }
 
   useEffect(() => {
@@ -38,34 +49,45 @@ function App() {
   console.log(selectedMeals)
 
   const generateShoppingList = () => {
-    setShoppingList([...shoppingList, ...selectedMeals.map(item => item.ingredients)])
-    console.log(shoppingList.join(','))
-  }
+    let ingredients = selectedMeals.map((item) => item.ingredients);
+    let merged = ingredients.flat(1);
+    console.log(merged);
+    setShoppingList(merged);
+    console.log(shoppingList);
+  };
 
 
 
-  const handleCopy = () => {
-    const textToCopy = document.getElementById(shoppingList)
-    const hiddenInput = document.createElement("input")
-    hiddenInput.setAttribute("type", "hidden")
-    hiddenInput.setAttribute("value", textToCopy.innerHTML)
-    document.body.appendChild(hiddenInput)
-    hiddenInput.select()
-    document.execCommand("copy")
-    document.body.removeChild(hiddenInput)
-    alert('List has been copied to clipboard')
-
-  }
+  const handleCopy = async () => {
+    let text = document.querySelectorAll(".shoppingList");
+    let clipBoardArray = [];
+    text.forEach((element) => {
+      clipBoardArray.push(element.innerHTML);
+    });
+    let textToBeCopied = clipBoardArray.join(", ");
+    console.log(textToBeCopied);
+    try {
+      await navigator.clipboard.writeText(textToBeCopied);
+      alert("Content copied to clipboard");
+    } catch (err) {
+      alert("Failed to copy: ", err.message);
+    }
+  };
 
   return (
   <div className='App'>
   <h1>Meal planner</h1>
   <h2>Meal plan:</h2>
-  <button onClick={generateMealPlan}>Generate meal plan</button>
-  <Meals show={selectedMeals}/>
+  <button className='Button' onClick={generateMealPlan}>Generate meal plan</button>
+  <Meals className="Text" show={selectedMeals}/>
   <h2>Shopping list:</h2>
-  <button onClick={generateShoppingList}>Generate shopping list</button>
-  <button onClick={handleCopy}>Copy to clipboard</button>
+  {shoppingList && <ShoppingList className="Text" ingredients={shoppingList} />}
+  <button className='Button' onClick={generateShoppingList}>Generate shopping list</button>
+  <button className="Button" onClick={handleCopy}>Copy to clipboard</button>
+  <h3>Add meal to database:</h3>
+  <input placeholder='Meal' value={mealName}  onChange={(e) => setNewName(e.target.value)}></input>
+  <input placeholder='Ingredients (divide with comma)' value={ingredients} onChange={(e) => setNewIngredients(e.target.value)}></input>
+  <button onClick={writeMealData}>Add</button>
   </div>
   )
 }
